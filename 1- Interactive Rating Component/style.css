@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Overpass', sans-serif;
+    background: hsl(216, 12%, 8%);
+    line-height: 1.4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-container, .thanku-container{
+    width: 23rem;
+    padding: 2rem;
+    background: hsl(213, 19%, 18%);
+    border-radius: 1.5rem;
+}
+
+.star-img-box{
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: hsl(213, 19%, 23%);
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+
+}
+
+.star-img-box img{
+    position: relative;
+    top: 11px;
+    left: 12px;
+}
+
+.heading{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.text{
+    color: hsl(216, 12%, 54%);
+    margin-block: 1rem;
+    font-size: 14px;
+}
+
+#ratings{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#ratings li{
+    list-style: none;
+}
+
+#ratings li button{
+    height: 2.6rem;
+    width: 2.6rem;
+    background-color: hsl(213, 19%, 23%);
+    border: none;
+    border-radius: 50%;
+    margin: 1.2rem 0;
+    color: hsl(216, 12%, 54%);
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+#ratings li button:focus{
+    background-color: hsl(216, 12%, 54%);
+    color:  hsl(0, 0%, 100%);
+}
+
+
+#ratings li button:hover{
+    background-color: hsl(25, 97%, 53%);
+    color:  hsl(0, 0%, 100%);
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#submit, #rate-again{
+    width: 100%;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 20px;
+    margin-top: 12px;
+    background-color: hsl(25, 97%, 53%);
+    color:  hsl(0, 0%, 100%);
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#submit:hover, #rate-again:hover{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    font-weight: 700;
+}
+
+.hidden{
+    display: none;
+}
+
+.rating-img{
+    width: 10rem;
+    margin: 1rem auto;
+}
+
+.rating-img img{
+    width: 10rem;
+}
+
+.ratings-text{
+    width: 10rem;
+    color: hsl(25, 97%, 53%);
+    text-align: center;
+    margin: 15px auto;
+    padding: 5px;
+    background-color: hsl(213, 19%, 23%);
+    font-size: 13px;
+    font-weight: 400;
+    border-radius: 15px;
+}
+
+.massage{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.thanku-text{
+    color: hsl(216, 12%, 54%);
+    margin-block: 1rem;
+    font-size: 13.5px;
+    text-align: center;
+}
