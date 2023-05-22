@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
+:root{
+    --lightPurple: hsl(273, 75%, 66%);
+    --lightBlue: hsl(240, 73%, 65%);
+    --white: hsl(0, 0%, 100%);
+    --lightGrey: hsl(240, 5%, 91%);
+    --medGrey: hsl(240, 6%, 50%);
+    --darkGrey: hsl(237, 12%, 33%);
+    --orange: hsl(14, 88%, 65%);
+
+
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -12,14 +24,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background: linear-gradient( var(--lightPurple), var(--lightBlue));
 }
 
 
 .main-container{
     width: 60rem;
     border-radius: 15px;
-    background: #fff;
+    background: var(--white);
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -41,7 +53,7 @@ body{
 }
 
 .accordian-container hr{
-    border-color: 1px solid hsl(240, 5%, 91%);
+    border-color: 1px solid var(--lightGrey);
     margin: 15px 0;
     width: 95%;
 }
@@ -59,7 +71,7 @@ body{
 .question{
     font-size: 14px;
     font-weight: 500;
-    color:  hsl(237, 12%, 33%);
+    color: var(--darkGrey);
     margin-block: 10px;
     transition: 0.2s ease-in-out;
 }
@@ -69,7 +81,7 @@ body{
 }
 
 .question:hover{
-    color:  hsl(14, 88%, 65%);
+    color:  var(--orange);
     transition: 0.2s ease-in-out;
     cursor: pointer;
 }
@@ -79,7 +91,7 @@ body{
     overflow: hidden;
     font-size: 14px;
     line-height: 1.8;
-    color:  hsl(240, 6%, 50%);
+    color:  var(--medGrey);
     margin-right: 5rem;
     transition: max-height 1.2s ease-in-out;
 }
