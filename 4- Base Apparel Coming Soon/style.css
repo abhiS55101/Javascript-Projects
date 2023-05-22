@@ -1,0 +1,116 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,600;1,400&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: hsl(0, 100%, 98%);
+}
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.left-section{
+    width: 72rem;
+    height: 100vh;
+    padding: 4rem 8rem;
+    background: url("./Images/bg-pattern-desktop.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-heading{
+    margin-top: 6rem;
+    font-size: 3.5rem;
+    color: hsl(0, 36%, 70%);
+    letter-spacing: 5px;
+    line-height: 1.1;
+}
+
+.dark-text{
+    color: hsl(0, 6%, 24%);
+    font-weight: 600;
+    margin-right: 5rem;
+    letter-spacing: 15px;
+}
+
+.text{
+    color: hsl(0, 36%, 70%);
+    font-weight: 600;
+    margin-top: 2rem;
+    line-height: 1.5;
+    padding-right: 13rem;
+}
+
+.login input{
+    position: relative;
+    margin-top: 3rem;
+    padding: 1.2rem 1rem;
+    font-size: 15px;
+    font-weight: 700;
+    width: 65%;
+    border: 2px solid hsl(0, 36%, 70%);
+    border-radius: 2rem;
+    background: transparent;
+    outline: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#error-img{
+    margin: -6px -150px;
+    display: none;
+}
+
+#error-msg{
+    display: none;
+    color: hsl(0, 74%, 74%);
+    font-weight: 600;
+    margin: 1rem 2rem;
+}
+
+.login input::placeholder{
+    color: hsl(0, 80%, 86%);
+    letter-spacing: 2px;
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+#btn{
+    position: absolute;
+    bottom: 9.62rem;
+    left: 28.72rem;
+    padding: 1.1rem 3rem;
+    border: none;
+    border-radius: 2rem;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%),  hsl(0, 74%, 74%));
+    box-shadow: 0px 8px 15px hsl(0, 80%, 86%);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+#btn:hover{
+    cursor: pointer;
+    background: linear-gradient(135deg, hsl(0, 100%, 98%), hsl(0, 80%, 86%) );
+    box-shadow: 0px 8px 25px  hsl(0, 74%, 74%);
+}
+
+.right-section{
+    background: url("./Images/hero-desktop.jpg");
+    background-repeat: no-repeat;
+    width: 40vw;
+    width: 50rem;
+    height: 100vh;
+}
+
+
