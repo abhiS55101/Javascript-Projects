@@ -74,7 +74,9 @@ body{
 }
 
 #error-msg{
-    display: none;
+    position: absolute;
+    bottom: 6.5rem;
+    left: 7rem;
     color: hsl(0, 74%, 74%);
     font-weight: 600;
     margin: 1rem 2rem;

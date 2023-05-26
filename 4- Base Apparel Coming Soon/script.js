@@ -10,20 +10,22 @@ button.addEventListener("click", () =>{
 
 function emailChecker() {
 
-    if(email.value == ""){
+    if(email.value == 0){
         errorImg.style.display = "inline-block";
-        errorMsg.style.display = "block";
         email.style.border = "3px solid #ff2851";
+        errorMsg.innerHTML = "Please provide an email";
     }
 
-    else if(email.value.match(mailRegex)) {
-        email.style.border = "3px solid #2ecc71";
-        errorMsg.innerHTML = "Email submitted";
+    else if(!email.value.match(mailRegex)) {
+        email.style.border = "3px solid #ff2851";
+        errorMsg.innerHTML = "This is not a valid email";
     }
 
     else {
-        email.style.border = "3px solid #ff2851";
+        email.style.border = "3px solid #2ecc71";
+        errorImg.style.display = "none";
         errorMsg.innerHTML = "Email submitted";
+        errorMsg.style.color = "#2ecc71";
     }
 };
 
