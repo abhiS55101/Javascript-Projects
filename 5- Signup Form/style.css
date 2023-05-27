@@ -16,6 +16,7 @@
 }
 
 body{
+    width: 100%;
     background: url("./images/bg-intro-desktop.png"), var(--red);
     background-repeat: no-repeat;
     background-size: cover;
@@ -35,7 +36,8 @@ main{
 }
 
 .section-left{
-    max-width: 35rem;
+    /* max-width: 35rem; */
+    max-width: 40rem;
 }
 
 .heading{
@@ -48,7 +50,8 @@ main{
     font-size: 1rem;
     color: var(--white);
     line-height: 24px;
-    padding: 0 4rem 0 0;
+    /* padding: 0 4rem 0 0; */
+    padding: 0 5rem 0 0;
 }
 .section-right{
     max-width: 30rem;
@@ -87,9 +90,27 @@ main{
     position: relative;
 }
 
-.box img{
+.box #errorImg1, .box #checkImg1{
     position: absolute;
-    top: 23px ;
+    top: 23px;
+    right: 10px;
+    display: none;
+}
+.box #errorImg2, .box #checkImg2{
+    position: absolute;
+    top: 23px;
+    right: 10px;
+    display: none;
+}
+.box #errorImg3, .box #checkImg3{
+    position: absolute;
+    top: 23px;
+    right: 10px;
+    display: none;
+}
+.box #errorImg4, .box #checkImg4{
+    position: absolute;
+    top: 23px;
     right: 10px;
     display: none;
 }

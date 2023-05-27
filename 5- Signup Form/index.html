@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +9,15 @@
     <script src="script.js" defer></script>
     <title>Intro Component Signup Form</title>
 </head>
+
 <body>
     <!----- Main Starts ----->
     <main>
         <!---- Left Section ----->
         <div class="section-left">
             <h1 class="heading">Learn to code by watching others</h1>
-            <p class="text">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+            <p class="text">See how experienced developers solve problems in real-time. Watching scripted tutorials is
+                great, but understanding how developers think is invaluable.</p>
         </div>
         <!-----Left section Ends ----->
 
@@ -29,41 +32,102 @@
             <div class="box">
                 <form action="#">
                     <p>
-                        <input type="text"
-                        placeholder="First Name"
-                        id="f-name">
-                        <img src="./images/icon-error.svg" alt="error" id="errorImg1">
+                        <input type="text" placeholder="First Name" id="f-name" oninput="validateName()">
+                        <!-- <img src="./images/icon-error.svg" alt="error" id="errorImg1"> -->
+                        <lord-icon
+                        src="https://cdn.lordicon.com/bmnlikjh.json"
+                        trigger="loop"
+                        delay="1000"
+                        colors="primary:#e83a30"
+                        style="width:25px;height:25px"
+                        id="errorImg1">
+                        </lord-icon>
+
+                        <lord-icon
+                        src="https://cdn.lordicon.com/egiwmiit.json"
+                        trigger="loop"
+                        delay="3000"
+                        colors="primary:#109121"
+                        style="width:25px;height:25px"
+                        id="checkImg1">
+                        </lord-icon>
+
                         <span id="firstNameError"></span>
                     </p>
                     <p>
-                        <input type="text"
-                        placeholder="Last Name"
-                        id="l-name">
-                        <img src="./images/icon-error.svg" alt="error" id="errorImg2">
+                        <input type="text" placeholder="Last Name" id="l-name" oninput="validateLastName()">
+                        <!-- <img src="./images/icon-error.svg" alt="error" id="errorImg2"> -->
+                        <lord-icon
+                        src="https://cdn.lordicon.com/bmnlikjh.json"
+                        trigger="loop"
+                        delay="1000"
+                        colors="primary:#e83a30"
+                        style="width:25px;height:25px"
+                        id="errorImg2">
+                        </lord-icon>
+
+                        <lord-icon
+                        src="https://cdn.lordicon.com/egiwmiit.json"
+                        trigger="loop"
+                        delay="3000"
+                        colors="primary:#109121"
+                        style="width:25px;height:25px"
+                        id="checkImg2">
+                        </lord-icon>
                         <span id="lastNameError"></span>
                     </p>
                     <p>
-                        <input type="email"
-                        placeholder="Email Address"
-                        id="email">
-                        <img src="./images/icon-error.svg" alt="error" id="errorImg3">
+                        <input type="email" placeholder="Email Address" id="email" oninput="validateEmail()">
+                        <!-- <img src="./images/icon-error.svg" alt="error" id="errorImg3"> -->
+                        <lord-icon
+                        src="https://cdn.lordicon.com/bmnlikjh.json"
+                        trigger="loop"
+                        delay="1000"
+                        colors="primary:#e83a30"
+                        style="width:25px;height:25px"
+                        id="errorImg3">
+                        </lord-icon>
+
+                        <lord-icon
+                        src="https://cdn.lordicon.com/egiwmiit.json"
+                        trigger="loop"
+                        delay="3000"
+                        colors="primary:#109121"
+                        style="width:25px;height:25px"
+                        id="checkImg3">
+                        </lord-icon>
                         <span id="emailError">
                             <!-- Looks like this is not an email -->
                         </span>
                     </p>
                     <p>
-                        <input type="password" placeholder="Password"
-                        id="pass"
-                        min="8"
-                        max="16">
-                        <img src="./images/icon-error.svg" alt="error" id="errorImg4">
+                        <input type="password" placeholder="Password" id="pass" min="8" max="16"
+                            oninput="validatePassword()">
+                        <!-- <img src="./images/icon-error.svg" alt="error" id="errorImg4"> -->
+                        <lord-icon
+                        src="https://cdn.lordicon.com/bmnlikjh.json"
+                        trigger="loop"
+                        delay="1000"
+                        colors="primary:#e83a30"
+                        style="width:25px;height:25px"
+                        id="errorImg4">
+                        </lord-icon>
+
+                        <lord-icon
+                        src="https://cdn.lordicon.com/egiwmiit.json"
+                        trigger="loop"
+                        delay="3000"
+                        colors="primary:#109121"
+                        style="width:25px;height:25px"
+                        id="checkImg4">
+                        </lord-icon>
                         <span id="passwordError">
                             <!-- Password cannot be empty -->
                         </span>
                     </p>
 
                     <button type="submit" id="btn">CLAIM YOUR FREE TRIAL</button>
-    
+
                     <p class="small">
                         By clicking the button, you are agreeing to our
                         <span>Terms and Services.</span>
@@ -75,5 +139,7 @@
         <!-- Right Section Ends ----->
     </main>
     <!----- Main Ends ----->
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
 </body>
+
 </html>
